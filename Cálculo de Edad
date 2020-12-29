@@ -1,0 +1,37 @@
+#include <iostream>
+#include <stdio.h>
+
+
+using namespace std;
+
+int main (){
+	int dia,mes,year,diaa,mesa,yeara,a,m,d;
+	
+	cout<<"ingrese anio actual"<<endl;
+	cin>>year;
+	cout<<"ingrese mes actual"<<endl;
+	cin>>mes;
+	cout<<"ingrese dia actual"<<endl;
+	cin>>dia;
+	cout<<"ingrese su anio de nacimiento"<<endl;
+	cin>>yeara;
+	cout<<"ingrese su mes de nacimiento"<<endl;
+	cin>>mesa;
+	cout<<"ingrese su dia de nacimiento"<<endl;
+	cin>>diaa;
+	
+	if(dia<diaa){
+		dia=dia+30;
+		mes=mes-1;
+	}
+	if(mes<mesa){
+		mes=mes+12;
+		year=year-1;
+	}
+	a=year-yeara;
+	m=mes-mesa;
+	d=dia-diaa;
+	cout<<"su edad actual es: "<<a<<" anios "<<m<<" meses "<<d<<" dias "<<endl;
+	system("pause");
+	return 0;
+}
